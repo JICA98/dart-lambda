@@ -1,6 +1,3 @@
-
-import 'dart:math';
-
 import 'package:dart_lambda/logging/log.dart';
 import 'package:dart_lambda/model/request_payload/request_payload.dart';
 import 'package:dart_lambda/model/request_payload/request_payload_event.dart';

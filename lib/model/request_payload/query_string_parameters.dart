@@ -11,8 +11,8 @@ class QueryStringParameters {
 
   factory QueryStringParameters.fromJson(Map<String, dynamic> json) {
     return QueryStringParameters(
-      parameter1: json['parameter1'] as String,
-      parameter2: json['parameter2'] as String,
+      parameter1: json['parameter1'],
+      parameter2: json['parameter2'],
     );
   }
 

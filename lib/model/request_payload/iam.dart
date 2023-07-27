@@ -23,13 +23,13 @@ class Iam {
   }
 
   factory Iam.fromJson(Map<String, dynamic> json) => Iam(
-        accessKey: json['accessKey'] as String,
-        accountId: json['accountId'] as String,
-        callerId: json['callerId'] as String,
-        cognitoIdentity: json['cognitoIdentity'] as dynamic,
-        principalOrgId: json['principalOrgId'] as dynamic,
-        userArn: json['userArn'] as String,
-        userId: json['userId'] as String,
+        accessKey: json['accessKey'],
+        accountId: json['accountId'],
+        callerId: json['callerId'],
+        cognitoIdentity: json['cognitoIdentity'],
+        principalOrgId: json['principalOrgId'],
+        userArn: json['userArn'],
+        userId: json['userId'],
       );
 
   Map<String, dynamic> toJson() => {

@@ -38,11 +38,11 @@ class RequestPayload {
 
   factory RequestPayload.fromJson(Map<String, dynamic> json) {
     return RequestPayload(
-      version: json['version'] as String,
-      routeKey: json['routeKey'] as String,
-      rawPath: json['rawPath'] as String,
-      rawQueryString: json['rawQueryString'] as String,
-      cookies: json['cookies'] as List<String>,
+      version: json['version'],
+      routeKey: json['routeKey'],
+      rawPath: json['rawPath'],
+      rawQueryString: json['rawQueryString'],
+      cookies: json['cookies'] ,
       headers: json['headers'] == null
           ? null
           : Headers.fromJson(json['headers'] as Map<String, dynamic>),
@@ -54,10 +54,10 @@ class RequestPayload {
           ? null
           : RequestContext.fromJson(
               json['requestContext'] as Map<String, dynamic>),
-      body: json['body'] as String,
-      pathParameters: json['pathParameters'] as dynamic,
+      body: json['body'],
+      pathParameters: json['pathParameters'],
       isBase64Encoded: json['isBase64Encoded'] as bool,
-      stageVariables: json['stageVariables'] as dynamic,
+      stageVariables: json['stageVariables'],
     );
   }
 

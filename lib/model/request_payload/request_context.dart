@@ -37,22 +37,22 @@ class RequestContext {
 
   factory RequestContext.fromJson(Map<String, dynamic> json) {
     return RequestContext(
-      accountId: json['accountId'] as String,
-      apiId: json['apiId'] as String,
-      authentication: json['authentication'] as dynamic,
+      accountId: json['accountId'],
+      apiId: json['apiId'],
+      authentication: json['authentication'],
       authorizer: json['authorizer'] == null
           ? null
           : Authorizer.fromJson(json['authorizer'] as Map<String, dynamic>),
-      domainName: json['domainName'] as String,
-      domainPrefix: json['domainPrefix'] as String,
+      domainName: json['domainName'],
+      domainPrefix: json['domainPrefix'],
       http: json['http'] == null
           ? null
           : Http.fromJson(json['http'] as Map<String, dynamic>),
-      requestId: json['requestId'] as String,
-      routeKey: json['routeKey'] as String,
-      stage: json['stage'] as String,
-      time: json['time'] as String,
-      timeEpoch: json['timeEpoch'] as int,
+      requestId: json['requestId'],
+      routeKey: json['routeKey'],
+      stage: json['stage'],
+      time: json['time'],
+      timeEpoch: json['timeEpoch'],
     );
   }
 

@@ -19,11 +19,11 @@ class Http {
   }
 
   factory Http.fromJson(Map<String, dynamic> json) => Http(
-        method: json['method'] as String,
-        path: json['path'] as String,
-        protocol: json['protocol'] as String,
-        sourceIp: json['sourceIp'] as String,
-        userAgent: json['userAgent'] as String,
+        method: json['method'],
+        path: json['path'],
+        protocol: json['protocol'],
+        sourceIp: json['sourceIp'],
+        userAgent: json['userAgent'],
       );
 
   Map<String, dynamic> toJson() => {

@@ -8,8 +8,8 @@ class Headers {
   String toString() => 'Headers(header1: $header1, header2: $header2)';
 
   factory Headers.fromJson(Map<String, dynamic> json) => Headers(
-        header1: json['header1'] as String,
-        header2: json['header2'] as String,
+        header1: json['header1'],
+        header2: json['header2'],
       );
 
   Map<String, dynamic> toJson() => {
